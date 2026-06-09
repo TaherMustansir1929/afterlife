@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "oxfmt": "^0.54.0",
+    "oxlint": "^1.69.0",
+    "ultracite": "7.8.2"
+  },
+  "name": "afterlife",
+  "peerDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "scripts": {
+    "check": "ultracite check",
+    "fix": "ultracite fix",
+    "dev": "bun run --hot packages/core/src/index.ts"
+  },
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true
+}
